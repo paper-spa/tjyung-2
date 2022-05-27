@@ -40,6 +40,7 @@ jobs:
       uses: paper-spa/upload-pages-artifact@main
       with:
         directory: '.next/'
+        path: '/pages'
 
   # The deploy job tells Pages to deploy the artifact we created in "build"
   deploy:
