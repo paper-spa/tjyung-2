@@ -34,6 +34,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
+    - run: npm run export --if-present
 
     - name: Upload Pages artifact
       uses: paper-spa/upload-pages-artifact@main
